@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url(./assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 32px 24px;
+  font-size: 1.2rem;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: min(200px, 10%);
+}
+
+.navlink {
+  border-radius: 999999px;
+  padding: 8px 24px;
+  margin-right: 24px;
+  transition: 1s;
+  text-decoration: none;
+  font-weight: normal;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+}
+
+.hover-scale-animation {
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.hover-scale-animation:hover {
+  transform: scale(1.1) translateY(-2px);
+}
+
+.dowload-for-free-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding: 16px 32px;
+  border-radius: 25px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.dowload-for-free-button .logo {
+  filter: invert();
+  width: 18px;
+  height: 18px;
+}
+
+.download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  margin: 32px;
+  margin-left: min(360px, 18%);
+}
+
+.download-section h1 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+.download-section p {
+  font-size: 1.4rem;
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.download-section div {
+  margin-top: 32px;
+}
